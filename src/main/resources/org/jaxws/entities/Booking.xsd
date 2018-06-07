@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://dkansh.org/entities/Booking" xmlns:tns="http://dkansh.org/entities/Booking"
+	elementFormDefault="qualified">
+
+	<!-- Book Request Type -->
+	<xsd:element name="BookingRequestType">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="paxName" type="xsd:string" />
+				<xsd:element name="paxAge" type="xsd:integer" />
+				<xsd:element name="bookingSource" type="xsd:string" />
+				<xsd:element name="bookingDestination" type="xsd:string" />
+				<xsd:element name="bookingDate" type="xsd:string" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<!-- Book Response Type -->
+	<xsd:element name="BookingResponseType">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="paxName" type="xsd:string" />
+				<xsd:element name="paxAge" type="xsd:integer" />
+				<xsd:element name="bookingSource" type="xsd:string" />
+				<xsd:element name="bookingDestination" type="xsd:string" />
+				<xsd:element name="bookingDate" type="xsd:string" />
+				<xsd:element name="bookedCabinNumber" type="xsd:string" />
+				<xsd:element name="bookingID" type="xsd:string" />
+				<xsd:element name="componentID" type="xsd:string" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+</xsd:schema>
